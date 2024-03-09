@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D3EE4A8-C806-4BA8-9574-1D982F045EEB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RockShitmin</RootNamespace>
+    <AssemblyName>RockShitmin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>RecRoom\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>RecRoom\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="AstarPathfindingProject">
+      <HintPath>RecRoom\AstarPathfindingProject.dll</HintPath>
+    </Reference>
+    <Reference Include="Backtrace.Unity">
+      <HintPath>RecRoom\Backtrace.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.All.Injection.PhotonNetSystem">
+      <HintPath>RecRoom\Circuits.All.Injection.PhotonNetSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.All.Mock">
+      <HintPath>RecRoom\Circuits.All.Mock.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Dynamic.Core.NetSystem">
+      <HintPath>RecRoom\Circuits.Dynamic.Core.NetSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Dynamic.Mock">
+      <HintPath>RecRoom\Circuits.Dynamic.Mock.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Shared.Utilities">
+      <HintPath>RecRoom\Circuits.Shared.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.GraphSystem">
+      <HintPath>RecRoom\Circuits.Static.Core.GraphSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.NetSystem">
+      <HintPath>RecRoom\Circuits.Static.Core.NetSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.RequestReduce">
+      <HintPath>RecRoom\Circuits.Static.Core.RequestReduce.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.TreeSystem">
+      <HintPath>RecRoom\Circuits.Static.Core.TreeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.TypeCheckSystem">
+      <HintPath>RecRoom\Circuits.Static.Core.TypeCheckSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.TypeSystem">
+      <HintPath>RecRoom\Circuits.Static.Core.TypeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Core.UnificationSystem">
+      <HintPath>RecRoom\Circuits.Static.Core.UnificationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.EV">
+      <HintPath>RecRoom\Circuits.Static.EV.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.RecRoom">
+      <HintPath>RecRoom\Circuits.Static.RecRoom.dll</HintPath>
+    </Reference>
+    <Reference Include="Circuits.Static.Utilities">
+      <HintPath>RecRoom\Circuits.Static.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Codestage.Anticheattoolkit.Runtime">
+      <HintPath>RecRoom\Codestage.Anticheattoolkit.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Colorful.Console, Version=1.2.15.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Colorful.Console.1.2.15\lib\net461\Colorful.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="CSCore">
+      <HintPath>RecRoom\CSCore.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyAntiCheat.Client">
+      <HintPath>RecRoom\EasyAntiCheat.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>RecRoom\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>RecRoom\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonChat">
+      <HintPath>RecRoom\PhotonChat.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonRealtime">
+      <HintPath>RecRoom\PhotonRealtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking">
+      <HintPath>RecRoom\PhotonUnityNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking.Utilities">
+      <HintPath>RecRoom\PhotonUnityNetworking.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice">
+      <HintPath>RecRoom\PhotonVoice.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.API">
+      <HintPath>RecRoom\PhotonVoice.API.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN">
+      <HintPath>RecRoom\PhotonVoice.PUN.dll</HintPath>
+    </Reference>
+    <Reference Include="RecNet.Runtime">
+      <HintPath>RecRoom\RecNet.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>RecRoom\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\MenuController.cs" />
+    <Compile Include="Hooker.cs" />
+    <Compile Include="Menus\LoginMenu.cs" />
+    <Compile Include="Menus\MainMenu.cs" />
+    <Compile Include="Menus\Menu.cs" />
+    <Compile Include="Menus\MiscMenu.cs" />
+    <Compile Include="Menus\ModMenu.cs" />
+    <Compile Include="Menus\Offsets.cs" />
+    <Compile Include="Menus\WeaponsMenu.cs" />
+    <Compile Include="Mods\Cheats.cs" />
+    <Compile Include="Mods\Gifting.cs" />
+    <Compile Include="Mods\PhotonHost.cs" />
+    <Compile Include="Mods\ResponseResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RecRoom\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
